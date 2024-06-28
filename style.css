@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 html , body{
@@ -111,7 +112,7 @@ nav ul{
 }
 
 .hero-left h1{
-    line-height: 7vh;
+    line-height: 50px;
 }
 
 .hero-left button{
@@ -171,3 +172,70 @@ nav ul{
 
 /* Choose Section Starts From Here */
 
+.choose{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: red; */
+    margin-top: 80px;
+}
+
+.choose-head h1{
+    font-family: 'integral' , sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    max-width: 860px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.choose-container{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: -120px; */
+    /* height: 100%; */
+    width: 90%;
+    margin: 0px auto;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+
+.choose-cont{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: darksalmon; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+.choose-box{
+    margin: 30px;
+    width: 590px;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    background-color: #000F3B;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.choose-box img{
+    position: absolute;
+    left: 577px;
+}
+
+.choose-box p{
+    line-height: 30px;
+    width: 80%;
+}
+
+.choose-box-right{
+    text-align: right;
+}
+
+.choose-box-right img{
+    position: relative;
+    left: -530px;
+    /* right: 0px; */
+    /* left: 749px; */
+}
