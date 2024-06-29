@@ -14,36 +14,45 @@
 
     <!-- Nav Section Starts From Here -->
 
-    <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                        viewBox="0 96 960 960" width="26">
-                        <path
-                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                    </svg></a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li>
-            <li><button>Contact Us</button></li>
-            <li><button class="apply">Apply Now</button></li>
-        </ul>
-        <ul>
-            <li><a href="#"><img class="logo" src="Assets/logo.png" alt=""></a></li>
-            <li class="hideOnMobile"><a href="#">Blog</a></li>
-            <li class="hideOnMobile"><a href="#">Products</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Forum</a></li>
-            <li class="hideOnMobile"><a href="#">Login</a></li>
-            <li><button>Contact Us</button></li>
-            <li><button class="apply">Apply Now</button></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26" viewBox="0 96 960 960" width="26">
-                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                    </svg></a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Assets/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Why Us</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="contact-us">Contact Us</button>
+                <button class="apply-now">Apply Now</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
     </nav>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Why Us</a></li>
+        <button class="contact-us">Contact Us</button>
+        <button class="apply-now">Apply Now</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "0px" || sidebar.style.width === "") {
+                sidebar.style.width = "250px";
+            } else {
+                sidebar.style.width = "0px";
+            }
+        }
+    </script>
 
     <!-- Hero Section Starts From Here -->
 
@@ -509,16 +518,7 @@
 
 
 
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-    </script>
+
 </body>
 
 </html>

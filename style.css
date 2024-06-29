@@ -30,112 +30,153 @@ body {
 
 /* Nav Starts From Here */
 
-nav{
-    background-color: #00134da4;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    margin: 20px auto;
-    height: 13vh;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00134D;
+    color: white;
+    padding: 45px 20px;
+    width: 85vw;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    margin: 30px auto;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    border-radius: 50px;
-  }
-  nav ul{
-    width: 100%;
+    margin-right: 20px;
+    width: 15%;
+    /* background-color: red; */
+    margin-right: 30px;
+
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+.nav-links {
+    display: flex;
     list-style: none;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.buttons {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav li{
-    height: 50px;
-  }
+    gap: 20px;
+}
 
-  li button{
-    padding: 14px 20px;
-    background-color: #0047FF;
-    font-size: 15px;
-    border-radius: 50px;
+.contact-us {
+    background-color: #0038FF;
+    color: white;
     border: none;
-    margin: 2px;
-    margin-right: 15px;
-  }
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
 
-  .apply{
+.apply-now {
     background-color: white;
     color: #010B2A;
-  }
-
-  .logo{
-    width: 100%;
-    /* background-color: red; */
-    margin-left: 50px;
-  }
-  nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
     font-size: 20px;
-  }
-  nav a:hover{
-    /* background-color: #f0f0f0; */
-  }
-  nav li:first-child{
-    margin-right: auto;
-  }
-  .sidebar{
+}
+
+.contact-us:hover, .apply-now:hover {
+    opacity: 0.8;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
     position: fixed;
-    top: 0; 
+    top: 0;
     right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: #00134da4;
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
+    background-color: #00134d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+    text-align: center;
     z-index: 1000;
-    justify-content: flex-start;
-  }
-  .sidebar li{
-    width: 100%;
-  }
-  .sidebar a{
-    width: 100%;
-  }
-  .menu-button{
-    display: none;
-  }
-  @media(max-width: 800px){
-    .hideOnMobile{
-      display: none;
-    }
-    .menu-button{
-      display: block;
-    }
+}
 
-    li button{
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #16307c86;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.sidebar .contact-us, .sidebar .apply-now {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links, .buttons {
+        display: none;
+    }
+    .menu-icon {
         display: block;
     }
+}
 
-  }
-  @media(max-width: 400px){
-    .sidebar{
-      width: 100%;
-    }
-
-    
-    li button{
-        display: block;
-    }
-  }
 
 /* Hero Section Starts From Here */
+
+
 
 .hero {
     background-image: url(Assets/hero-bg-img.png);
@@ -221,6 +262,115 @@ nav{
     width: 85%;
     color: white;
     line-height: 22px;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        background-image: url(Assets/mobile-hero-bg-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: 100vh;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+    }
+
+
+    
+    .hero-left {
+        font-family: 'integral', sans-serif;
+        width: 100%;
+        font-size: 2.5vw;
+        font-weight: 800;
+        color: white;
+        margin-top: 60px;
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    
+    .hero-left h1 {
+        line-height: 25px;
+        text-align: center;
+        font-size: 23px;
+        width: 95%;
+        letter-spacing: 2px;
+        margin: 0px auto;
+        font-weight: 500;
+    }
+    
+    .hero-left button {
+        color: white;
+        background-color: #0047FF;
+        padding: 10px 40px;
+        background-size: cover;
+        font-size: 14px;
+        border: none;
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        top: 700px;
+        left: 88px;
+    }
+    
+    .hero-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .hero-btn img{
+        display: none;
+    }
+    
+    .hero-mid {
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        /* background-color: blue; */
+        
+    }
+    
+    .hero-mid img {
+        width: 70vw;
+        height: 45vh;
+    }
+    
+    .hero-right {
+        margin-top: 26%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 99%;
+        margin: 0px auto;
+    }
+    
+    .hero-right img {
+        position: absolute;
+        top: 170px;
+        width: 200px;
+        display: none;
+    }
+    
+    .hero-right p {
+        width: 90%;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        line-height: normal;
+        /* background-color: black; */
+        margin: 20px auto;
+    }
+
+    
 }
 
 /* Choose Section Starts From Here */
