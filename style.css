@@ -380,6 +380,12 @@ nav ul {
     background-position: 0px 0px;
 }
 
+.program-box-robo {
+    position: absolute;
+    right: 227px;
+    top: 20px;
+}
+
 .right-up {
     position: absolute;
     z-index: 3;
@@ -547,7 +553,7 @@ nav ul {
     font-size: 15px;
 }
 
-.category-box .btn-1{
+.category-box .btn-1 {
     background-image: url(Assets/category-btn.png);
     background-size: cover;
     width: 243px;
@@ -564,7 +570,183 @@ nav ul {
     bottom: -35px;
 }
 
-.category-box .btn-1 h4{
+.category-box .btn-1 h4 {
     font-size: 18px;
+}
+
+/* Ciriculum Section Starts From Here */
+
+.ciriculum {
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+}
+
+.ciriculum-head h1 {
+    font-family: 'integral', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.ciriculum-head p {
+    max-width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.ciriculum-upper-grid {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.ciriculum-upper-grid h4 {
+    padding: 15px 25px;
+    font-weight: 400;
+    background-color: #0047FF;
+    border-radius: 50px;
+    border: none;
+    margin: 20px;
+    text-align: center;
+}
+
+.ciriculum-lower-grid {
+    width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.ciriculum-lower-grid h4 {
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: 400;
+    background-color: white;
+
+    color: black;
+    border-radius: 50px;
+    border: none;
+    margin: 20px;
+}
+
+/* Unique Section Starts From Here */
+
+.unique {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.unique-head h1 {
+    font-family: 'integral', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    max-width: 860px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.unique-container{
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0px auto;
+    /* background-color: red; */
+    margin-top: 100px;
 
 }
+
+.unique-cont{
+    position: relative;
+    width: 90%;
+    flex-wrap: wrap;
+    /* background-color: forestgreen; */
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    /* height: 20vh; */
+}
+
+.unique-box-left{
+    margin: 20px;
+    background-image: url(Assets/unique-box-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.unique-box-left p{
+    width: 80%;
+    line-height: 24px;
+}
+
+.unique-box-left img{
+    position: absolute;
+    top: -10px;
+}
+.unique-box-right{
+    margin: 30px;
+    background-image: url(Assets/unique-box-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.unique-box-right p{
+    width: 80%;
+    line-height: 24px;
+}
+
+.unique-box-right img{
+    position: absolute;
+    bottom: 220px;
+}
+
+.unique-mid-cont{
+    width: 95%;
+    justify-content: space-between;
+}
+
+.unique-mid{
+    margin: 20px;
+    background-image: url(Assets/unique-mid-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.right img{
+    position: absolute;
+    bottom: 200px;
+}
+
+.unique-robo{
+    position: absolute;
+    z-index: 22;
+    bottom: -50px;
+    width: 43vw;
+    left: 360px;
+}
+
+
