@@ -44,7 +44,7 @@ nav {
 }
 
 .logo {
-    width: 17%;
+    width: 15%;
     /* background-color: blue; */
     margin: 0px auto;
 }
@@ -52,10 +52,10 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 57%;
+    justify-content: space-evenly;
+    width: 70%;
     /* background-color: red; */
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 
 nav ul {
@@ -205,8 +205,8 @@ nav ul {
 }
 
 .choose-box {
-    margin: 30px;
-    width: 590px;
+    margin: 25px;
+    width: 560px;
     display: flex;
     align-items: center;
     height: 160px;
@@ -217,7 +217,7 @@ nav ul {
 
 .choose-box img {
     position: absolute;
-    left: 577px;
+    left: 555px;
 }
 
 .choose-box p {
@@ -231,7 +231,7 @@ nav ul {
 
 .choose-box-right img {
     position: relative;
-    left: -530px;
+    left: -505px;
     /* right: 0px; */
     /* left: 749px; */
 }
@@ -612,7 +612,7 @@ nav ul {
     background-color: #0047FF;
     border-radius: 50px;
     border: none;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -648,7 +648,7 @@ nav ul {
     font-family: 'integral', sans-serif;
     font-weight: 800;
     font-size: 45px;
-    max-width: 860px;
+    max-width: 800px;
     text-align: center;
     margin: 0px auto;
 }
@@ -745,8 +745,8 @@ nav ul {
     position: absolute;
     z-index: 22;
     bottom: -50px;
-    width: 43vw;
-    left: 360px;
+    width: 35vw;
+    left: 29vw;
 }
 
 
