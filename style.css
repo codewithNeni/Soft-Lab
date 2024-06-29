@@ -528,8 +528,6 @@ body {
         position: relative;
         left: -125px;
         bottom: 80px;
-        /* right: 0px; */
-        /* left: 749px; */
     }
 
 
@@ -689,6 +687,12 @@ body {
     z-index: 3;
     right: 100px;
     top: 550px;
+}
+
+@media (max-width: 800px) {
+
+
+
 }
 
 /* Trainers Section Start From Here */
