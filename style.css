@@ -133,10 +133,6 @@ nav{
     li button{
         display: block;
     }
-
-
-
-
   }
 
 /* Hero Section Starts From Here */
@@ -826,7 +822,7 @@ nav{
 }
 
 .demand-right {
-    margin-top: 90px;a
+    margin-top: 90px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -922,4 +918,139 @@ nav{
 .enroll-right p{
     width: 90%;
     margin-top: 15px;
+}
+
+/* Contact Form Starts From Here */
+
+.contact{
+    width: 85vw;
+    /* height: 80vh; */
+    display: flex;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    width: 50%;
+    height: 80%;
+    /* background-color: red; */
+}
+.contact-right{
+    width: 50%;
+    height: 80%;
+    /* background-color: rgb(71, 13, 13); */
+}
+
+.contact-left h1{
+    font-family: 'integral', sans-serif;
+    font-size: 45px;
+}
+.contact-left P{
+    width: 60%;
+    margin-top: 23px;
+    line-height: 23px;
+}
+
+.email-content{
+    padding: 15px;
+
+}
+
+.email-content p{
+    margin-top: 3px;
+}
+
+.contact-links{
+    width: 80%;
+    height: 300px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+
+.contact-icons-links{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:100px;
+}
+
+.address{
+    width: 100%;
+}
+
+
+.contact-form {
+    background-color: #000F3B;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 12px;
+    margin-left: 15px;
+    font-weight: 800;
+}
+
+.contact-form input,
+.contact-form select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: white;
+    outline: none;
+    width: 400px;
+    height: 50px;
+}
+
+.contact-form input::placeholder {
+    color: rgba(255, 255, 255, 0.20);
+}
+
+.contact-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.14);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE1bC00LjMtNC40Yy0uMi0uMi0uNS0uMi0uNyAwbC0xLjEgMS4xYy0uMi4yLS4yLjUtLjIuNyAwIC4yLjIuNS4zLjdsNSA1Yy4yLjIuNS4yLjcgMGw1LTVjLjItLjIuMi0uNSAwLS43bC0xLjEtMS4xYy0uMi0uMi0uNS0uMi0uNyAwTDEyIDE1eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* Copyright Section Starts From Here */
+
+.copyright {
+    width: 100%;
+    background-color: #0038FF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.copyright p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
 }
