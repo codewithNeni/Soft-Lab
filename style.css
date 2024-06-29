@@ -30,59 +30,114 @@ body {
 
 /* Nav Starts From Here */
 
-nav {
-    width: 85vw;
+nav{
+    background-color: #00134da4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px auto;
     height: 13vh;
-    background: transparent;
-    background-color: #00134d9f;
     display: flex;
     align-items: center;
     border-radius: 50px;
-    margin: 0px auto;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.logo {
-    width: 15%;
-    /* background-color: blue; */
-    margin: 0px auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 70%;
-    /* background-color: red; */
-    /* margin: 0px auto; */
-}
-
-nav ul {
-    display: flex;
+  }
+  nav ul{
+    width: 100%;
     list-style: none;
-    color: white;
-    font-size: 21px;
-    gap: 40px;
-}
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
 
-.nav-contact-btn {
-    background-color: #0038FF;
-    color: white;
-    padding: 13px;
+  li button{
+    padding: 14px 20px;
+    background-color: #0047FF;
+    font-size: 15px;
     border-radius: 50px;
     border: none;
-    font-size: 19px;
-}
+    margin: 2px;
+    margin-right: 15px;
+  }
 
-.nav-apply-btn {
+  .apply{
     background-color: white;
     color: #010B2A;
-    padding: 12px;
-    border-radius: 50px;
-    border: none;
-    font-size: 18px;
-}
+  }
+
+  .logo{
+    width: 100%;
+    /* background-color: red; */
+    margin-left: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+  }
+  nav a:hover{
+    /* background-color: #f0f0f0; */
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #00134da4;
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+
+    li button{
+        display: block;
+    }
+
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+
+    
+    li button{
+        display: block;
+    }
+
+
+
+
+  }
 
 /* Hero Section Starts From Here */
 
@@ -771,7 +826,7 @@ nav ul {
 }
 
 .demand-right {
-    margin-top: 90px;
+    margin-top: 90px;a
     width: 50%;
     display: flex;
     align-items: center;
@@ -816,4 +871,55 @@ nav ul {
         width: 100vw;
     }
     
+}
+
+/* Enroll Section Starts From Here */
+
+.enroll{
+    background-image: url(Assets/Vector\ 33.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 90vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 170px;
+}
+
+.enroll-left{
+    width: 30%;
+    height: 80%;
+    /* background-color: rgb(0, 255, 255); */
+}
+
+.enroll-left img{
+    position: absolute;
+    z-index: 20;
+    bottom: 45px;
+    width: 35vw;
+}
+
+.enroll-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.enroll-right h1{
+    font-family: 'integral', sans-serif;
+    font-size: 3vw;
+    width: 90%;
+}
+
+.enroll-right p{
+    width: 90%;
+    margin-top: 15px;
 }

@@ -15,19 +15,27 @@
     <!-- Nav Section Starts From Here -->
 
     <nav>
-        <div class="logo">
-            <img src="Assets/logo.png" alt="">
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Why Us</li>
-            </ul>
-            <button class="nav-contact-btn">Contact Us</button>
-            <button class="nav-apply-btn">Apply Now</button>
-        </div>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+            <li><button>Contact Us</button></li>
+            <li><button class="apply">Apply Now</button></li>
+          </ul>
+          <ul>
+            <li><a href="#"><img class="logo" src="Assets/logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Products</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li><button>Contact Us</button></li>
+            <li><button class="apply">Apply Now</button></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>
     </nav>
 
     <!-- Hero Section Starts From Here -->
@@ -410,6 +418,36 @@
         </div>
     </section>
 
+    <!-- Enroll Section Starts From Here -->
+
+    <section class="enroll">
+        <div class="enroll-left">
+            <img src="Assets/enroll-robot.png" alt="">
+        </div>
+
+        <div class="enroll-right">
+            <h1>Enroll Now and Take the First Step Towards an Exciting Career in AI!</h1>
+            <p>For more information and to register, please visit our website or contact us directly. Join the AI revolution and become a leader in one of the fastest-growing fields today.
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
 </body>
 
 </html>
