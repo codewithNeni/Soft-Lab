@@ -202,10 +202,12 @@ nav ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    /* background-color: red; */
 }
 
 .choose-box {
-    margin: 25px;
+    margin: 15px;
     width: 560px;
     display: flex;
     align-items: center;
@@ -217,7 +219,7 @@ nav ul {
 
 .choose-box img {
     position: absolute;
-    left: 555px;
+    left: 545px;
 }
 
 .choose-box p {
@@ -382,8 +384,6 @@ nav ul {
 
 .program-box-robo {
     position: absolute;
-    right: 228px;
-    bottom: 200px;
 }
 
 .right-up {
