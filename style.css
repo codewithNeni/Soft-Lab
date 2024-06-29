@@ -519,7 +519,7 @@ body {
         justify-content: center;
     }
 
-    .choose-box-right p{
+    .choose-box-right p {
         text-align: right;
         width: 100%;
     }
@@ -538,8 +538,6 @@ body {
 .program {
     width: 100%;
     margin-top: 80px;
-    /* height: 100vh; */
-    /* background-color: rebeccapurple; */
     position: relative;
 }
 
@@ -550,6 +548,10 @@ body {
     max-width: 860px;
     text-align: center;
     margin: 0px auto;
+}
+
+.program-box-robo {
+    display: none;
 }
 
 .robo-hand {
@@ -567,14 +569,11 @@ body {
 
 .program-container {
     width: 70%;
-    /* height: 70%; */
-    /* background-color: rgb(151, 126, 126); */
     margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 100px;
-    flex-wrap: wrap;
 }
 
 .program-box {
@@ -583,7 +582,6 @@ body {
     width: 360px;
     height: 440px;
     background-repeat: no-repeat;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: inherit;
@@ -594,7 +592,6 @@ body {
 .program-box-content {
     height: 40%;
     width: 95%;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -677,10 +674,6 @@ body {
     background-position: 0px 0px;
 }
 
-.program-box-robo {
-
-    position: absolute;
-}
 
 .right-up {
     position: absolute;
@@ -691,7 +684,136 @@ body {
 
 @media (max-width: 800px) {
 
+    .program-head h1 {
+        font-family: 'integral', sans-serif;
+        line-height: 25px;
+        text-align: center;
+        font-size: 23px;
+        width: 90%;
+        letter-spacing: 1px;
+        margin: 0px auto;
+        font-weight: 500;
+    }
 
+    .robo-hand {
+        display: none;
+    }
+
+    .side-img {
+        display: none;
+    }
+
+    .program-container {
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    .program-box {
+        background-image: url(Assets/prog-box-1.png);
+        background-size: contain;
+        width: 360px;
+        height: 440px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: center;
+        padding: 20px 5px;
+    }
+
+    .program-box-content {
+        height: 40%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+        align-items: center;
+        padding: 10px;
+        margin-top: 90px;
+    }
+
+    .program-box-content h3 {
+        margin: 20px 0px;
+
+    }
+
+    .program-box-content ul {
+        background-repeat: no-repeat;
+        list-style-image: none url(Assets/Grup\ 30.svg);
+        width: 95%;
+        margin: 0px auto;
+        list-style: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .program-box-content li {
+        margin-bottom: 20px;
+        background-image: url(Assets/blue-bullet.png);
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        background-position: 0px 0px;
+
+    }
+
+    .program-box .btn-1 {
+        background-image: url(Assets/blue-btn.png);
+        background-size: cover;
+        width: 298px;
+        height: 70px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'integral', sans-serif;
+        font-size: 22px;
+        font-weight: 100;
+    }
+
+    .program-box-2 {
+        background-image: url(Assets/prog-box-2.png);
+        background-size: contain;
+        width: 360px;
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+
+    .program-box-2 .btn-2 h4 {
+        background-image: url(Assets/white-btn.png);
+        background-size: cover;
+        width: 298px;
+        height: 70px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'integral', sans-serif;
+        font-size: 24px;
+        font-weight: 100;
+        color: #0038FF;
+    }
+
+    .program-box-2 li {
+        margin-bottom: 20px;
+        background-image: url(Assets/white-bulet.png);
+        background-repeat: no-repeat;
+        padding-left: 27px;
+        background-position: 0px 0px;
+    }
+
+
+    .right-up {
+        display: none;
+    }
 
 }
 
