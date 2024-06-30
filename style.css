@@ -908,15 +908,15 @@ body {
 
 @media (max-width : 700px) {
 
-    
-.trainers {
-    width: 100%;
-    margin-top: 40px;
-    position: relative;
-}
 
-.trainers-head h1 {
-    font-family: 'integral', sans-serif;
+    .trainers {
+        width: 100%;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .trainers-head h1 {
+        font-family: 'integral', sans-serif;
         line-height: 25px;
         text-align: center;
         font-size: 23px;
@@ -924,74 +924,78 @@ body {
         letter-spacing: 1px;
         margin: 0px auto;
         font-weight: 500;
-}
+    }
 
-.trainers-head {
-    margin-top: 50px;
-}
+    .trainers-head {
+        margin-top: 50px;
+    }
 
-.trainers-container {
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 100px;
-    flex-wrap: wrap;
-    position: relative;
-}
+    .trainers-container {
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        position: relative;
+    }
 
-.trainers-box {
-    background-image: url(Assets/trainers-bg.png);
-    background-size: contain;
-    width: 535px;
-    height: 460px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 5px;
-    margin: 20px;
-}
+    .trainers-box {
+        background-image: url(Assets/mobile-trainer-bg-img.png);
+        background-size: contain;
+        width: 90vw;
+        height: 340px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: center;
+        padding: 0px 0px;
+    }
 
-.trainers-box .btn {
-    background-image: url(Assets/);
-    margin-top: 40px;
-    background-size: contain;
-    width: 368px;
-    height: 57px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'integral', sans-serif;
-    font-size: 22px;
-    font-weight: 100;
-}
+    .trainers-box .btn {
+        background-image: url(Assets/);
+        margin-top: 40px;
+        background-size: contain;
+        width: 368px;
+        height: 57px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'integral', sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+    }
 
-.trainers-info {
-    margin-top: 20px;
-    display: flex;
-    width: 90%;
-    /* background-color: black; */
-    flex-direction: column;
-    gap: 20px;
-    line-height: 23px;
-    text-align: center;
-}
+    .trainers-info {
+        margin-top: 10px;
+        margin-bottom: 42px;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+        line-height: 15px;
+        /* background-color: red; */
+        text-align: center;
+    }
 
-.trainers-icons {
-    position: absolute;
-    top: 450px;
-    display: flex;
-    gap: 10px;
-}
+    .trainers-icons {
+        position: relative;
+        top: 2px;
+        display: flex;
+        gap: 14px;
+    }
 
-.trainers-icons img {
-    width: 50px;
-}
+    .trainers-icons img {
+        width: 30px;
+    }
 
-    
+    .trainers-box p {
+        font-size: 12px;
+    }
+
+
 }
 
 /* Categories Section Start From Here */
