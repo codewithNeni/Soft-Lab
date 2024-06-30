@@ -1520,7 +1520,6 @@ body {
         left: 0vw;
     }
 
-
 }
 
 
@@ -1568,6 +1567,27 @@ body {
 
 @media (max-width:700px) {
 
+    .demand h1 {
+        font-family: 'integral', sans-serif;
+        line-height: 25px;
+        text-align: left;
+        font-size: 28px;
+        width: 99%;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin-left: 11px;
+    }
+
+
+    .demand-left p {
+        text-align: left;
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 11px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
     .demand {
         width: 100%;
         display: flex;
@@ -1580,8 +1600,9 @@ body {
     }
 
     .demand-right {
-        width: 99%;
-        margin: 10px auto;
+        width: 95%;
+        margin: 30px auto;
+        
     }
 
     .demand-right img {
