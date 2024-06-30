@@ -716,7 +716,7 @@ body {
     .program-box {
         background-image: url(Assets/prog-box-1.png);
         background-size: contain;
-        width: 360px;
+        width: 90vw;
         height: 440px;
         background-repeat: no-repeat;
         display: flex;
@@ -739,7 +739,8 @@ body {
     }
 
     .program-box-content h3 {
-        margin: 20px 0px;
+        margin: 15px 0px;
+        font-size: 16px;
 
     }
 
@@ -762,14 +763,15 @@ body {
         background-repeat: no-repeat;
         padding-left: 30px;
         background-position: 0px 0px;
+        font-size: 14px;
 
     }
 
     .program-box .btn-1 {
         background-image: url(Assets/blue-btn.png);
         background-size: cover;
-        width: 298px;
-        height: 70px;
+        width: 218px;
+        height: 50px;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
@@ -782,24 +784,30 @@ body {
     .program-box-2 {
         background-image: url(Assets/prog-box-2.png);
         background-size: contain;
-        width: 360px;
-        height: 400px;
+        width: 90vw;
+        height: 440px;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: center;
+        padding: 20px 5px;
     }
 
     .program-box-2 .btn-2 h4 {
         background-image: url(Assets/white-btn.png);
         background-size: cover;
-        width: 298px;
-        height: 70px;
+        width: 218px;
+        height: 50px;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: 'integral', sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 100;
         color: #0038FF;
+        cursor: pointer;
     }
 
     .program-box-2 li {
@@ -862,7 +870,7 @@ body {
 }
 
 .trainers-box .btn {
-    background-image: url(Assets/trainer-btn.png);
+    background-image: url(Assets/);
     margin-top: 40px;
     background-size: contain;
     width: 368px;
@@ -896,6 +904,94 @@ body {
 
 .trainers-icons img {
     width: 50px;
+}
+
+@media (max-width : 700px) {
+
+    
+.trainers {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.trainers-head h1 {
+    font-family: 'integral', sans-serif;
+        line-height: 25px;
+        text-align: center;
+        font-size: 23px;
+        width: 90%;
+        letter-spacing: 1px;
+        margin: 0px auto;
+        font-weight: 500;
+}
+
+.trainers-head {
+    margin-top: 50px;
+}
+
+.trainers-container {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.trainers-box {
+    background-image: url(Assets/trainers-bg.png);
+    background-size: contain;
+    width: 535px;
+    height: 460px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    margin: 20px;
+}
+
+.trainers-box .btn {
+    background-image: url(Assets/);
+    margin-top: 40px;
+    background-size: contain;
+    width: 368px;
+    height: 57px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'integral', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.trainers-info {
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    /* background-color: black; */
+    flex-direction: column;
+    gap: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.trainers-icons {
+    position: absolute;
+    top: 450px;
+    display: flex;
+    gap: 10px;
+}
+
+.trainers-icons img {
+    width: 50px;
+}
+
+    
 }
 
 /* Categories Section Start From Here */
