@@ -576,7 +576,7 @@ body {
 }
 
 
-.pr-icon{
+.pr-icon {
     position: absolute;
     z-index: 22;
     top: 180px;
@@ -639,30 +639,6 @@ body {
     cursor: pointer;
 }
 
-.program-box:hover{
-    background-size: contain;
-    width: 360px;
-    height: 440px;
-    background-repeat: no-repeat;
-    transform: scale(1.09);
-}
-
-.program-box-2 .btn-2 h4 :hover {
-    background-image: url(Assets/white-btn.png);
-    background-size: cover;
-    width: 298px;
-    height: 70px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'integral', sans-serif;
-    font-size: 24px;
-    font-weight: 100;
-    transform: scale(1.1);
-    color: #0038FF;
-
-}
 .program-box-2 {
     background-image: url(Assets/prog-box-2.png);
     background-size: contain;
@@ -676,7 +652,8 @@ body {
     padding: 20px 5px;
 }
 
-.program-box-2 .btn-2 h4 {
+
+.program-box-2 .btn-2 {
     background-image: url(Assets/blue-btn.png);
     background-size: cover;
     width: 298px;
@@ -694,7 +671,7 @@ body {
 
 .program-box-2 li {
     margin-bottom: 20px;
-    background-image: url(Assets/white-bulet.png);
+    background-image: url(Assets/blue-bullet.png);
     background-repeat: no-repeat;
     padding-left: 27px;
     background-position: 0px 0px;
@@ -708,6 +685,8 @@ body {
     top: 550px;
 }
 
+/* Program-Hover Effects */
+
 @media (max-width: 800px) {
 
     .program-head h1 {
@@ -720,6 +699,8 @@ body {
         margin: 0px auto;
         font-weight: 500;
     }
+
+
 
     .robo-hand {
         display: none;
@@ -838,7 +819,7 @@ body {
 
     .program-box-2 li {
         margin-bottom: 20px;
-        background-image: url(Assets/white-bulet.png);
+        background-image: url(Assets/blue-bullet.png);
         background-repeat: no-repeat;
         padding-left: 27px;
         background-position: 0px 0px;
@@ -1071,7 +1052,7 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.category-box:hover{
+.category-box:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -1650,7 +1631,7 @@ body {
     .demand-right {
         width: 95%;
         margin: 30px auto;
-        
+
     }
 
     .demand-right img {
@@ -1706,6 +1687,61 @@ body {
 .enroll-right p {
     width: 90%;
     margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+
+    .enroll {
+        background-image: url(Assets/enroll-mobile-bg-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .enroll-left {
+        width: 90%;
+        /* background-color: red; */
+    }
+
+    .enroll-left img {
+        width: 280px;
+        margin-left: 30px;
+    }
+
+    .enroll-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enroll-right h1 {
+        line-height: 25px;
+        text-align: center;
+        font-size: 23px;
+        width: 100%;
+        letter-spacing: 2px;
+        margin: 0px auto;
+        font-weight: 500;
+    }
+
+    .enroll-right p {
+        width: 90%;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        line-height: normal;
+        margin: 20px auto;
+    }
 }
 
 /* Contact Form Starts From Here */
@@ -1834,17 +1870,17 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .contact-left {
         width: 100%;
         /* height: 80%; */
     }
-    
+
     .contact-right {
         width: 50%;
         height: 80%;
     }
-    
+
     .contact-left h1 {
         font-family: 'integral', sans-serif;
         line-height: 25px;
@@ -1854,44 +1890,44 @@ body {
         letter-spacing: 1px;
         font-weight: 500;
     }
-    
+
     .contact-left P {
         width: 100%;
         margin-top: 23px;
         line-height: 23px;
     }
-    
+
     .email-content {
         padding: 15px;
-    
+
     }
-    
+
     .email-content p {
         margin-top: 3px;
     }
-    
+
     .contact-links {
         width: 100%;
         height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    
+
     }
-    
-    
+
+
     .contact-icons-links {
         display: flex;
         align-items: center;
         width: 100%;
         height: 100px;
     }
-    
+
     .address {
         width: 100%;
     }
-    
-    
+
+
     .contact-form {
         background-color: #000F3B;
         padding: 25px;
@@ -1905,19 +1941,19 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
+
     .contact-form form {
         display: flex;
         flex-direction: column;
     }
-    
+
     .contact-form label {
         margin-bottom: 10px;
         margin-left: 15px;
         font-weight: 800;
         font-size: 16px;
     }
-    
+
     .contact-form input,
     .contact-form select {
         margin-bottom: 20px;
@@ -1930,11 +1966,11 @@ body {
         width: 250px;
         height: 50px;
     }
-    
+
     .contact-form input::placeholder {
         color: rgba(255, 255, 255, 0.20);
     }
-    
+
     .contact-form select {
         appearance: none;
         -webkit-appearance: none;
@@ -1946,7 +1982,7 @@ body {
         background-size: 16px 16px;
         color: rgba(255, 255, 255, 0.14);
     }
-    
+
 
 }
 
