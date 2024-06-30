@@ -906,7 +906,7 @@ body {
     width: 50px;
 }
 
-@media (max-width : 700px) {
+@media (max-width : 750px) {
 
 
     .trainers {
@@ -955,7 +955,7 @@ body {
 
     .trainers-box .btn {
         background-image: url(Assets/);
-        margin-top: 40px;
+        margin-top: 66px;
         background-size: contain;
         width: 368px;
         height: 57px;
@@ -982,7 +982,7 @@ body {
 
     .trainers-icons {
         position: relative;
-        top: 2px;
+        top: -12px;
         display: flex;
         gap: 14px;
     }
@@ -1004,8 +1004,6 @@ body {
     width: 100%;
     margin-top: 80px;
     position: relative;
-    /* height: 100vh; */
-    /* background-color: rgb(72, 62, 62);? */
 }
 
 .category-head h1 {
@@ -1014,7 +1012,6 @@ body {
     font-size: 45px;
     max-width: 840px;
     text-align: left;
-    /* background-color: rebeccapurple;? */
     margin-left: 121px;
 
 }
@@ -1031,9 +1028,7 @@ body {
 }
 
 .category-container {
-    /* height: 70%; */
     width: 90%;
-    /* background-color: aqua;? */
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -1097,6 +1092,100 @@ body {
 .category-box .btn-1 h4 {
     font-size: 18px;
 }
+
+@media (max-width : 750px){
+
+    .category {
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
+    }
+    
+    .category-head h1 {
+        font-family: 'integral', sans-serif;
+        line-height: 25px;
+        text-align: left;
+        font-size: 28px;
+        width: 90%;
+        letter-spacing: 1px;
+        margin: 0px auto;
+        font-weight: 500;
+    
+    }
+    
+    .category-head p {
+        max-width: 300px;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .category-head {
+        margin-top: 120px;
+    }
+    
+    .category-container {
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .category-box {
+        background-image: url(Assets/categpry-box-mobile-bg-img.png);
+        background-size: contain;
+        width: 350px;
+        background-repeat: no-repeat;
+        margin: 20px 12px;
+    }
+    
+    .category-box-content {
+        text-align: center;
+        height: 280px;
+        justify-content: space-evenly;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    
+    }
+    
+    .category-box-content h4 {
+        font-size: 18px;
+        width: 70%;
+    }
+    
+    .category-box-content p {
+        width: 70%;
+        font-size: 13px;
+    }
+    
+    .category-box .btn-1 {
+        background-image: url(Assets/category-btn.png);
+        background-size: cover;
+        width: 218px;
+        height: 50px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'integral', sans-serif;
+        font-size: 22px;
+        font-weight: 100;
+        position: relative;
+        z-index: 3;
+        left: 0px;
+        bottom: -30px;
+    }
+    
+}
+
+
 
 /* Ciriculum Section Starts From Here */
 
