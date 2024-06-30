@@ -571,9 +571,19 @@ body {
     flex-direction: column;
     justify-content: inherit;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     padding: 20px 5px;
 }
+
+
+.pr-icon{
+    position: absolute;
+    z-index: 22;
+    top: 180px;
+    width: 100px;
+}
+
+
 
 .program-box-content {
     height: 40%;
@@ -630,12 +640,11 @@ body {
 }
 
 .program-box:hover{
-    background-image: url(Assets/prog-box-2.png);
     background-size: contain;
     width: 360px;
     height: 440px;
     background-repeat: no-repeat;
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
 
 .program-box-2 .btn-2 h4 :hover {
@@ -652,9 +661,10 @@ body {
     font-weight: 100;
     transform: scale(1.1);
     color: #0038FF;
+
 }
 .program-box-2 {
-    background-image: url(Assets/prog-box-1.png);
+    background-image: url(Assets/prog-box-2.png);
     background-size: contain;
     width: 360px;
     height: 440px;
@@ -1058,6 +1068,12 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.category-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .category-box-content {
