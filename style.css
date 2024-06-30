@@ -488,7 +488,7 @@ body {
     .choose-box img {
         position: relative;
         left: -126px;
-        top: -83px;
+        top: -91px;
     }
 
     .choose-box p {
@@ -785,8 +785,7 @@ body {
         justify-content: center;
         font-family: 'integral', sans-serif;
         font-size: 22px;
-        font-weight: 100;
-    }
+}
 
     .program-box-2 {
         background-image: url(Assets/prog-box-2.png);
@@ -801,8 +800,8 @@ body {
         padding: 20px 5px;
     }
 
-    .program-box-2 .btn-2 h4 {
-        background-image: url(Assets/white-btn.png);
+    .program-box-2 .btn-2{
+        background-image: url(Assets/blue-btn.png);
         background-size: cover;
         width: 218px;
         height: 50px;
@@ -812,7 +811,6 @@ body {
         justify-content: center;
         font-family: 'integral', sans-serif;
         font-size: 22px;
-        font-weight: 100;
         color: #0038FF;
         cursor: pointer;
     }
@@ -1101,6 +1099,12 @@ body {
 }
 
 @media (max-width : 750px) {
+
+    .category-box:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        display: none;
+    }
 
     .category {
         width: 100%;
@@ -1635,7 +1639,7 @@ body {
     }
 
     .demand-right img {
-        width: 100vw;
+        width: 90vw;
     }
 
 }
@@ -1696,32 +1700,35 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         width: 90vw;
-        height: 90vh;
+        height: 95vh;
         display: flex;
         flex-direction: column-reverse;
         position: relative;
-        margin-top: 100px;
+        margin-top: 90px;
         align-items: center;
     }
 
     .enroll-left {
         width: 90%;
-        /* background-color: red; */
+        margin-top: 150px;
+        margin-left: 60px;
+
+
     }
 
     .enroll-left img {
         width: 280px;
-        margin-left: 30px;
     }
 
     .enroll-right {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        
         align-items: center;
         width: 90%;
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
     }
 
     .enroll-right h1 {
