@@ -1401,10 +1401,10 @@ body {
 
     .ciriculum-upper-grid {
         width: 100%;
-        flex-wrap: wrap;
         display: flex;
         margin-top: 50px;
-        justify-content: space-evenly;
+        animation: 19s slide infinite linear;
+
     }
 
     .ciriculum-upper-grid h4 {
@@ -1420,9 +1420,9 @@ body {
     .ciriculum-lower-grid {
         width: 100%;
         margin: 0px auto;
-        flex-wrap: wrap;
         display: flex;
-        justify-content: space-evenly;
+        animation: 19s slide-right infinite linear;
+
     }
 
     .ciriculum-lower-grid h4 {
@@ -1434,6 +1434,17 @@ body {
         border: none;
         margin: 10px;
         text-align: center;
+    }
+
+    @keyframes slide {
+        to{
+            transform: translateX(-1000%);
+        }
+    }
+    @keyframes slide-right {
+        from{
+            transform: translateX(-950%);
+        }
     }
 
 }
