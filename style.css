@@ -179,7 +179,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 30px;
     }
 
     nav {
@@ -687,7 +687,7 @@ body {
 }
 
 
-.program-btn h4{
+.program-btn h4 {
     font-size: 20px;
 }
 
@@ -699,21 +699,21 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.program-box-2:hover{
+.program-box-2:hover {
     background-image: url(Assets/prog-box-2-hover.png);
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.program-box:hover .program-btn{
+.program-box:hover .program-btn {
     background-image: url(Assets/white-btn.png);
 }
 
-.program-box:hover .program-btn h4{
+.program-box:hover .program-btn h4 {
     color: #0038FF;
 }
 
-.program-box:hover li{
+.program-box:hover li {
     background-image: url(Assets/white-bulet.png);
 }
 
@@ -824,7 +824,7 @@ body {
         justify-content: center;
         font-family: 'integral', sans-serif;
         font-size: 17px;
-}
+    }
 
     .program-box-2 {
         background-image: url(Assets/prog-box-2.png);
@@ -839,7 +839,7 @@ body {
         padding: 20px 5px;
     }
 
-    .program-box-2 .btn-2{
+    .program-box-2 .btn-2 {
         background-image: url(Assets/blue-btn.png);
         background-size: cover;
         width: 218px;
@@ -868,7 +868,7 @@ body {
         display: none;
     }
 
-    .program-box:hover{
+    .program-box:hover {
         display: none;
     }
 
@@ -1140,20 +1140,20 @@ body {
 
 /* Category Hover Effect */
 
-.category-box:hover{
+.category-box:hover {
     background-image: url(Assets/category\ Box\ Hover.png);
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    
+
 }
 
-.category-box:hover .category-btn{
+.category-box:hover .category-btn {
     background-image: url(Assets/category-white-btn.png);
     cursor: pointer;
 }
 
-.category-box:hover .category-btn h4{
-    color:#0038FF;
+.category-box:hover .category-btn h4 {
+    color: #0038FF;
 }
 
 @media (max-width : 750px) {
@@ -1262,6 +1262,7 @@ body {
     width: 100%;
     margin-top: 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .ciriculum-head h1 {
@@ -1281,14 +1282,22 @@ body {
 }
 
 .ciriculum-upper-grid {
+    user-select: none;
     width: 100%;
-    flex-wrap: wrap;
-    display: flex;
     margin-top: 50px;
-    justify-content: space-evenly;
+    display: flex;
+    animation: 9s slide infinite linear;
 }
 
-.ciriculum-upper-grid h4 {
+.ciriculum-lower-grid {
+    user-select: none;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    animation: 9s slide-right infinite linear;
+}
+
+.ciriculum-upper-grid span {
     padding: 15px 25px;
     font-weight: 400;
     background-color: #0047FF;
@@ -1298,26 +1307,69 @@ body {
     text-align: center;
 }
 
-.ciriculum-lower-grid {
-    width: 90%;
-    margin: 0px auto;
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-evenly;
-}
-
-.ciriculum-lower-grid h4 {
+.ciriculum-lower-grid span {
     padding: 15px 25px;
-    text-align: center;
     font-weight: 400;
     background-color: white;
-
-    color: black;
     border-radius: 50px;
     border: none;
-    margin: 20px;
+    color: black;
+    margin: 10px;
+    text-align: center;
 }
+
+/* Slide */
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-163%);
+    }
+}
+@keyframes slide-right {
+    from{
+        transform: translateX(-150%);
+    }
+}
+
+.slide {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slide:before,
+.slide:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.slide:before {
+    left: 0;
+}
+
+.slide:after {
+    right: 0;
+}
+
+.ciriculum-upper-grid:hover {
+    animation-play-state: paused;
+}
+
+.ciriculum-lower-grid:hover {
+    animation-play-state: paused;
+    
+}
+
+
+
+
 
 @media (max-width : 750px) {
 
@@ -1782,7 +1834,7 @@ body {
     .enroll-right {
         display: flex;
         flex-direction: column;
-        
+
         align-items: center;
         width: 90%;
         display: flex;
