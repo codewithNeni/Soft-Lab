@@ -623,7 +623,7 @@ body {
 
 }
 
-.program-box .btn-1 {
+/* .program-box .btn-1 {
     background-image: url(Assets/blue-btn.png);
     background-size: cover;
     width: 298px;
@@ -636,7 +636,7 @@ body {
     font-size: 22px;
     font-weight: 100;
     cursor: pointer;
-}
+} */
 
 .program-box-2 {
     background-image: url(Assets/prog-box-2.png);
@@ -652,7 +652,7 @@ body {
 }
 
 
-.program-box-2 .btn-2 {
+.program-btn {
     background-image: url(Assets/blue-btn.png);
     background-size: cover;
     width: 298px;
@@ -666,6 +666,7 @@ body {
     font-weight: 100;
     cursor: pointer;
     color: white;
+    cursor: pointer;
 }
 
 .program-box-2 li {
@@ -682,6 +683,28 @@ body {
     z-index: 3;
     right: 100px;
     top: 550px;
+}
+
+/* Program Box Hover  */
+
+.program-box-1:hover {
+    background-image: url(Assets/prog-box-1-hover.png);
+}
+
+.program-box-2:hover{
+    background-image: url(Assets/prog-box-2-hover.png);
+}
+
+.program-box:hover .program-btn{
+    background-image: url(Assets/white-btn.png);
+}
+
+.program-box:hover .program-btn h4{
+    color: #0047FF;
+}
+
+.program-box:hover li{
+    background-image: url(Assets/white-bulet.png);
 }
 
 /* Program-Hover Effects */
