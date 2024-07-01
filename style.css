@@ -165,9 +165,21 @@ body {
         list-style-type: none;
     }
 
-    nav {
+    .navbar {
         display: flex;
+        gap: 50px;
+        align-items: center;
+        background-color: #00134D;
+        color: white;
+        padding: 35px 0px;
+        width: 85vw;
+        height: 60px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 1;
+        margin: 30px auto;
     }
+    
 
     .nav-links,
     .buttons {
@@ -179,7 +191,7 @@ body {
     }
 
     .logo img {
-        height: 30px;
+        height: 35px;
     }
 
     nav {
