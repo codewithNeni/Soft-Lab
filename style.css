@@ -570,7 +570,7 @@ body {
     flex-direction: column;
     justify-content: inherit;
     align-items: center;
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px 5px;
 }
 
@@ -649,6 +649,7 @@ body {
     justify-content: inherit;
     align-items: center;
     padding: 20px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -694,10 +695,14 @@ body {
 
 .program-box-1:hover {
     background-image: url(Assets/prog-box-1-hover.png);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .program-box-2:hover{
     background-image: url(Assets/prog-box-2-hover.png);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .program-box:hover .program-btn{
@@ -1086,6 +1091,7 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -1136,6 +1142,9 @@ body {
 
 .category-box:hover{
     background-image: url(Assets/category\ Box\ Hover.png);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 .category-box:hover .category-btn{
