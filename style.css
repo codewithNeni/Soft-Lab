@@ -685,6 +685,11 @@ body {
     top: 550px;
 }
 
+
+.program-btn h4{
+    font-size: 20px;
+}
+
 /* Program Box Hover  */
 
 .program-box-1:hover {
@@ -700,7 +705,7 @@ body {
 }
 
 .program-box:hover .program-btn h4{
-    color: #0047FF;
+    color: #0038FF;
 }
 
 .program-box:hover li{
@@ -844,6 +849,7 @@ body {
         cursor: pointer;
     }
 
+
     .program-box-2 li {
         margin-bottom: 20px;
         background-image: url(Assets/blue-bullet.png);
@@ -854,6 +860,10 @@ body {
 
 
     .right-up {
+        display: none;
+    }
+
+    .program-box:hover{
         display: none;
     }
 
@@ -1076,13 +1086,8 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
-    transition: all 0.4s ease-in-out;
 }
 
-.category-box:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 .category-box-content {
     text-align: center;
@@ -1106,7 +1111,7 @@ body {
     font-size: 15px;
 }
 
-.category-box .btn-1 {
+.category-btn {
     background-image: url(Assets/category-btn.png);
     background-size: cover;
     width: 243px;
@@ -1123,8 +1128,23 @@ body {
     bottom: -35px;
 }
 
-.category-box .btn-1 h4 {
+.category-btn h4 {
     font-size: 18px;
+}
+
+/* Category Hover Effect */
+
+.category-box:hover{
+    background-image: url(Assets/category\ Box\ Hover.png);
+}
+
+.category-box:hover .category-btn{
+    background-image: url(Assets/category-white-btn.png);
+    cursor: pointer;
+}
+
+.category-box:hover .category-btn h4{
+    color:#0038FF;
 }
 
 @media (max-width : 750px) {
