@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asia SoftLab</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,12 +34,14 @@
 
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Why Us</a></li>
-        <button class="contact-us">Contact Us</button>
-        <button class="apply-now">Apply Now</button>
+        <li><a href="#choose">Why Choose Our Programs</a></li>
+        <li><a href="#program">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#category">Categories</a></li>
+        <a href="#contact">
+            <button class="contact-us">Contact Us</button>
+        </a>
+    </div>
     </div>
 
     <script>
@@ -89,8 +90,8 @@
 
     <section id="choose" class="choose">
         <div class="choose-head">
-        <h1>Why Choose Our Certified AI Engineer Program?</h1>
-    </div>
+            <h1>Why Choose Our Certified AI Engineer Program?</h1>
+        </div>
 
         <div class="choose-container">
 
@@ -179,7 +180,7 @@
                     </ul>
                 </div>
                 <div class="program-btn">
-                    <a href="">
+                    <a href="#contact">
                         <h4> Apply Now</h4>
                     </a>
                 </div>
@@ -187,16 +188,17 @@
             <img src="Assets/robo-choose.png" alt="" class="right-robo">
             <div class="program-box-2 program-box">
                 <div class="program-box-content">
-                    <h3>For Beginners (Inexperienced)</h3>
+                    <h3>For Experienced Professionals</h3>
                     <ul>
-                        <li>Duration: 16 weeks</li>
-                        <li>Schedule: Friday nights, Saturday and Sunday (4 hours per session)</li>
-                        <li>Total Hours: 192 hours</li>
+                        <li>Duration: 12 weeks</li>
+                        <li>Schedule: Friday nights, Saturday and Sunday (4 hours per session)
+                        </li>
+                        <li>Duration: 144 hours</li>
                     </ul>
                 </div>
                 <div class="program-btn">
                     <div class="overlay">
-                        <a href="">
+                        <a href="#contact">
                             <h4> Apply Now</h4>
                         </a>
                     </div>
@@ -244,15 +246,17 @@
             <div class="trainers-box trainer-box-2">
                 <img src="Assets/trainer-2.png" alt="" class="trainer-2">
                 <div class="btn">
-                    Ts. Ahmad Nasir Bin Che Rosli                </div>
+                    Ts. Ahmad Nasir Bin Che Rosli </div>
                 <div class="trainers-info">
-                    <p>Experience: Expertise in Computer Science and AI, with significant contributions in the field through research and teaching at Universiti Malaysia Perlis (UniMAP).
+                    <p>Experience: Expertise in Computer Science and AI, with significant contributions in the field
+                        through research and teaching at Universiti Malaysia Perlis (UniMAP).
                     </p>
 
                     <p>Skills: Professional technologist with a focus on AI, machine learning, and embedded systems.
                     </p>
 
-                    <p>Achievements: Published numerous research papers and led various innovative projects, earning accolades in national and international exhibitions.
+                    <p>Achievements: Published numerous research papers and led various innovative projects, earning
+                        accolades in national and international exhibitions.
                     </p>
                 </div>
                 <div class="trainers-icons tr-icons-2">
@@ -281,7 +285,9 @@
                         practices.
                     </p>
                     <div class="category-btn">
+                        <a href="#contact">
                         <h4>Apply Now </h4>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -294,7 +300,9 @@
                         practices.
                     </p>
                     <div class="category-btn">
+                        <a href="#contact">
                         <h4>Apply Now </h4>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -307,7 +315,9 @@
                         practices.
                     </p>
                     <div class="category-btn">
+                        <a href="#contact">
                         <h4>Apply Now </h4>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -533,9 +543,9 @@
         </div>
 
 
-        <div  class="contact-form">
+        <div class="contact-form">
 
-            <form  action="#" method="post">
+            <form action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -547,12 +557,13 @@
 
                 <label for="city">Preferred Program (Beginner/Experienced)</label>
                 <select id="city" name="city" required>
-                    <option value="" disabled selected>Select your city</option>
-                    <option value="newyork">New York</option>
-                    <option value="losangeles">Los Angeles</option>
+                    <option value="" disabled selected>Select your Program</option>
+                    <option value="newyork">Beginner</option>
+                    <option value="losangeles">Experienced</option>
                     <option value="chicago">Chicago</option>/.
 
                 </select>
+                <button type="submit" class="submit-button">Submit Now</button>
             </form>
         </div>
     </div>

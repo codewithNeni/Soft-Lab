@@ -146,7 +146,7 @@ body {
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -208,6 +208,7 @@ body {
 
     .sidebar li {
         list-style-type: none;
+        font-size: 10px;
     }
 
     .navbar {
@@ -819,7 +820,7 @@ body {
 
     .choose-container {
         display: flex;
-        padding-top: 40px;
+        padding-top: 10px;
         justify-content: center;
         flex-direction: column;
         width: 90%;
@@ -893,12 +894,10 @@ body {
     will-change: transform;
     animation: slide-up 2s ease-in-out forwards;
     animation-timeline: scroll();
-    height: 150px;
 }
 
 @keyframes slide-up {
     from {
-        opacity: 0;
         transform: translateY(100%);
     }
 
@@ -1153,7 +1152,7 @@ body {
 
     .program {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 30px;
         padding-top: 0px;
         position: relative;
 
@@ -1187,7 +1186,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-top: 120px;
+        margin-top: 80px;
         flex-direction: column;
 
     }
@@ -1654,6 +1653,12 @@ body {
     z-index: 3;
     left: 0px;
     bottom: -35px;
+}
+
+.category-btn a{
+    width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .category-btn h4 {
@@ -2240,7 +2245,7 @@ body {
 
     .unique-box-left img {
         position: absolute;
-        top: -5px;
+        top: -15px;
     }
 
     .unique-box-right {
@@ -2264,7 +2269,7 @@ body {
 
     .unique-box-right img {
         position: absolute;
-        top: 215px;
+        top: -15px;
     }
 
     .unique-mid-cont {
@@ -2680,6 +2685,17 @@ body {
     background-size: 16px 16px;
     color: rgba(255, 255, 255, 0.14);
 }
+.submit-button {
+    background-color: #0047FF;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 400px;
+    margin: 0px auto;
+}
 
 @media (max-width:700px) {
 
@@ -2735,6 +2751,7 @@ body {
 
     }
 
+   
 
     .contact-icons-links {
         display: flex;
