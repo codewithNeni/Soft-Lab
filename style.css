@@ -47,8 +47,8 @@ body {
     position: relative;
     z-index: 1;
     margin: 30px auto;
-    animation: nav 3s 1;
-    animation-direction: normal;
+    /* animation: nav 3s 1;
+    animation-direction: normal; */
 }
 
 @keyframes nav {
@@ -240,7 +240,7 @@ body {
     .logo img {
         height: 35px;
         margin-left: 20px;
-        
+
     }
 
     nav {
@@ -277,8 +277,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    opacity: 0;
-    animation: slide-left 1.1s ease-in-out forwards;
+    /* opacity: 0;
+    animation: slide-left 1.1s ease-in-out forwards; */
 }
 
 @keyframes slide-left {
@@ -299,7 +299,7 @@ body {
 
 .hero-left h1 {
     line-height: 50px;
-    animation: heroLeft 4s 1;
+    /* animation: heroLeft 4s 1; */
     animation-direction: normal;
 }
 
@@ -321,7 +321,7 @@ body {
     width: 100px;
     height: 20px;
     position: relative;
-    left: -100px;
+    left: -50px;
     top: 20px;
 }
 
@@ -357,7 +357,7 @@ body {
     align-items: flex-end;
     position: relative;
     opacity: 0;
-    animation: slide-up 0.9s ease-in-out forwards;
+    /* animation: slide-up 0.9s ease-in-out forwards; */
 }
 
 @keyframes slide-up {
@@ -393,14 +393,14 @@ body {
     position: absolute;
     top: 170px;
     width: 200px;
-    animation: slideIn 1s ease-in-out forwards;
+    /* animation: slideIn 1s ease-in-out forwards; */
 }
 
 .hero-right p {
     width: 85%;
     color: white;
     line-height: 22px;
-    animation: slideIn 1s ease-in-out forwards;
+    /* animation: slideIn 1s ease-in-out forwards; */
 }
 
 @keyframes slideIn {
@@ -418,7 +418,7 @@ body {
 @media (min-width: 1800px) and (max-width: 2000px) {
     .hero-left h1 {
         line-height: 60px;
-        animation: heroLeft 4s 1;
+        /* animation: heroLeft 4s 1; */
         animation-direction: normal;
     }
 
@@ -444,7 +444,7 @@ body {
         justify-content: flex-end;
         position: relative;
         opacity: 0;
-        animation: slide-up 0.9s ease-in-out forwards;
+        /* animation: slide-up 0.9s ease-in-out forwards; */
     }
 
 
@@ -461,7 +461,7 @@ body {
         position: absolute;
         top: 210px;
         width: 200px;
-        animation: slideIn 1s ease-in-out forwards;
+        /* animation: slideIn 1s ease-in-out forwards; */
     }
 
 }
@@ -592,9 +592,6 @@ body {
 }
 
 /* Choose Section Starts From Here */
-
-
-
 .choose {
     width: 100%;
     margin-top: 80px;
@@ -604,17 +601,28 @@ body {
     font-family: 'integral', sans-serif;
     font-weight: 800;
     font-size: 45px;
-    max-width: 860px;
+    width: 60%;
     text-align: center;
     margin: 0px auto;
 }
 
 .choose-head {
     position: relative;
-    top: 0;
     width: 100%;
-    min-height: 20vh;
     margin: 10px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(-90px);
+    /* Start from above */
+    transition: opacity 0.5s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.choose-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 
@@ -891,10 +899,23 @@ body {
 
 .program-head {
     position: relative;
-    will-change: transform;
-    animation: slide-up 2s ease-in-out forwards;
-    animation-timeline: scroll();
+    width: 100%;
+    margin: 10px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(-100px);
+    /* Start from above */
+    transition: opacity 0.5s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
 }
+
+.program-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
 
 @keyframes slide-up {
     from {
@@ -1330,7 +1351,22 @@ body {
 }
 
 .trainers-head {
+    position: relative;
+    width: 100%;
     margin-top: 180px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateX(-90px);
+    /* Start from above */
+    transition: opacity 0.5s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.trainers-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .trainers-container {
@@ -1587,8 +1623,24 @@ body {
     text-align: left;
 }
 
+
 .category-head {
+    position: relative;
+    width: 100%;
     margin-top: 150px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateX(-100px);
+    /* Start from above */
+    transition: opacity 0.5s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.category-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .category-container {
@@ -1651,10 +1703,10 @@ body {
     bottom: -35px;
 }
 
-.category-btn a{
+.category-btn a {
     width: 100%;
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .category-btn h4 {
@@ -1853,6 +1905,25 @@ body {
     font-size: 45px;
     max-width: 100%;
     text-align: center;
+}
+
+.ciriculum-head {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(-100px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.ciriculum-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .ciriculum-head p {
@@ -2074,7 +2145,7 @@ body {
 
 .unique {
     width: 100%;
-    margin-top: 80px;
+    margin-top:120px;
 }
 
 .unique-head h1 {
@@ -2084,6 +2155,25 @@ body {
     max-width: 800px;
     text-align: center;
     margin: 0px auto;
+}
+
+.unique-head {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(100px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.unique-head.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .unique-container {
@@ -2318,8 +2408,20 @@ body {
 .demand-left {
     width: 50%;
     margin-top: 90px;
-    animation: slide-left 1.1s ease-in-out forwards;
     opacity: 0;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateX(-200px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.demand-left.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .demand-right img {
@@ -2332,8 +2434,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slideIn 1.1s ease-in-out forwards;
+    transform: translateX(200px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
 
+.demand-right.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .demand-left h1 {
@@ -2454,18 +2565,47 @@ body {
     margin-top: 170px;
 }
 
-.enroll-left {
+/* .enroll-left {
     width: 30%;
     height: 80%;
 
+} */
+
+.enroll-left {
+    width: 30%;
+    height: 80%;
+    /* Initially hidden */
+    transform: translateX(-200px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
 }
+
+.enroll-left.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
 
 .enroll-left img {
     position: absolute;
     z-index: 20;
-    bottom: 45px;
+    top: -50px;
     width: 35vw;
 }
+
+/* .enroll-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+} */
 
 .enroll-right {
     display: flex;
@@ -2476,6 +2616,17 @@ body {
     height: 75%;
     display: flex;
     flex-direction: column;
+    transform: translateX(200px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.enroll-right.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
 }
 
 .enroll-right h1 {
@@ -2581,6 +2732,24 @@ body {
     height: 80%;
 }
 
+.contact-left {
+    width: 50%;
+    height: 80%;
+    /* Initially hidden */
+    transform: translateX(-200px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.contact-left.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
+
 .contact-right {
     width: 50%;
     height: 80%;
@@ -2642,6 +2811,32 @@ body {
     align-items: center;
 }
 
+.contact-form {
+    background-color: #000F3B;
+    padding: 30px;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(250px);
+    /* Start from above */
+    transition: opacity 0s ease-out, transform 1.3s ease-out;
+    /* Smooth transition */
+}
+
+.contact-form.in-view {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -2681,6 +2876,7 @@ body {
     background-size: 16px 16px;
     color: rgba(255, 255, 255, 0.14);
 }
+
 .submit-button {
     background-color: #0047FF;
     color: white;
@@ -2693,7 +2889,7 @@ body {
     margin: 0px auto;
 }
 
-.contact-form select option{
+.contact-form select option {
     background-color: #00134d;
     border-radius: 0px;
     cursor: pointer;
@@ -2754,7 +2950,7 @@ body {
 
     }
 
-   
+
 
     .contact-icons-links {
         display: flex;
@@ -2774,8 +2970,8 @@ body {
         border-radius: 28px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         color: white;
-        width: 480px;
-        height: 470px;
+        width: 320px;
+        height: 530px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2788,23 +2984,24 @@ body {
     }
 
     .contact-form label {
-        margin-bottom: 10px;
         margin-left: 15px;
+        margin-top: 20px;
         font-weight: 800;
         font-size: 16px;
     }
 
     .contact-form input,
     .contact-form select {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding: 10px;
         border: none;
         border-radius: 20px;
         background-color: rgba(255, 255, 255, 0.14);
         color: white;
         outline: none;
-        width: 250px;
+        width: 260px;
         height: 50px;
+        margin: 0px auto;
     }
 
     .contact-form input::placeholder {
@@ -2823,6 +3020,18 @@ body {
         color: rgba(255, 255, 255, 0.14);
     }
 
+    .submit-button {
+        background-color: #0047FF;
+        color: white;
+        padding: 15px 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 260px;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
 
 }
 
