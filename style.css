@@ -1117,10 +1117,10 @@ body {
     width: 90%;
     margin: 0px auto;
     display: flex;
-    height: 120vh;
+    height: 70vh;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 180px;
+    margin-top: 350px;
     flex-wrap: wrap;
     position: relative;
 }
@@ -1136,6 +1136,9 @@ body {
     align-items: center;
     padding: 20px 5px;
     margin: 20px;
+    animation: slide-up 2s ease-in-out forwards;
+
+    
 }
 
 .trainers-box .btn {
@@ -1156,17 +1159,19 @@ body {
 .trainer-1 {
     position: absolute;
    width: 400px;
-    bottom: 627px;
-    left: 151px;
+    bottom: 410px;
+    left: 60px;
     z-index: 40;
+
 }
 
 .trainer-2 {
     position: absolute;
    width: 400px;
-    bottom: 627px;
-    right: 151px;
+   bottom: 410px;
+    left: 60px;
     z-index: 40;
+
 }
 
 
@@ -1182,7 +1187,7 @@ body {
 
 .trainers-icons {
     position: absolute;
-    top: 650px;
+    top: 430px;
     display: flex;
     gap: 10px;
 }
@@ -1557,7 +1562,7 @@ body {
     width: 100%;
     margin-top: 50px;
     display: flex;
-    animation: 9s slide infinite linear;
+    animation: 22s slide infinite linear;
 }
 
 .ciriculum-lower-grid {
@@ -1565,7 +1570,7 @@ body {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    animation: 9s slide-right infinite linear;
+    animation: 26s slide-right infinite linear;
 }
 
 .ciriculum-upper-grid span {
@@ -1788,6 +1793,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideIn 1s ease-in-out forwards;
+
 }
 
 .unique-box-right p {
@@ -1797,7 +1804,7 @@ body {
 
 .unique-box-right img {
     position: absolute;
-    bottom: 220px;
+    bottom: 180px;
 }
 
 .unique-mid-cont {
@@ -1967,7 +1974,7 @@ body {
 }
 
 .demand-right img {
-    width: 40vw;
+    width: 32vw;
 }
 
 .demand-right {
