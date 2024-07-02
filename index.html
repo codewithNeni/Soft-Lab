@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asia SoftLab</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,18 +15,19 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="Assets/logo.png" alt="Logo" class="logo-img">
+            <a href=""><img src="Assets/logo.png" alt="Logo" class="logo-img"></a>
         </div>
         <div class="navbar-right">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Why Us</a></li>
+                <li><a href="#choose">Why Choose Our Programs</a></li>
+                <li><a href="#program">Programs</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#category">Categories</a></li>
             </ul>
             <div class="buttons">
-                <button class="contact-us">Contact Us</button>
-                <button class="apply-now">Apply Now</button>
+                <a href="#contact">
+                    <button class="contact-us">Contact Us</button>
+                </a>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         </div>
@@ -54,7 +56,7 @@
 
     <!-- Hero Section Starts From Here -->
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-left">
             <h1>
                 Asia Softlab's Certified AI Engineer Program in Malaysia!
@@ -62,13 +64,13 @@
 
             <div class="hero-1">
 
-            <div class="hero-btn">
-                <h4>
-                    Contact Us
-                </h4>
+                <div class="hero-btn">
+                    <h4>
+                        Contact Us
+                    </h4>
+                </div>
+                <img src="Assets/arrow.png" alt="" class="arrow">
             </div>
-            <img src="Assets/arrow.png" alt="" class="arrow">
-        </div>
         </div>
 
         <div class="hero-mid">
@@ -85,10 +87,10 @@
 
     <!-- Choose Section Starts From Here -->
 
-    <section class="choose">
-        <div data-aos="fade-down" class="choose-head">
-            <h1>Why Choose Our Certified AI Engineer Program?</h1>
-        </div>
+    <section id="choose" class="choose">
+        <div class="choose-head">
+        <h1>Why Choose Our Certified AI Engineer Program?</h1>
+    </div>
 
         <div class="choose-container">
 
@@ -156,10 +158,10 @@
 
     <!-- Program Section Starts From Here -->
 
-    <section class="program">
+    <section id="program" class="program">
 
-        <div class="program-head">
-            <h1>Why Choose Our Certified AI Engineer Program?</h1>
+        <div class="program-head" data-aos="fade-up">
+            <h1>Program Details</h1>
         </div>
 
         <img class="robo-hand" src="Assets/robo-hand-choose.png" alt="">
@@ -177,10 +179,12 @@
                     </ul>
                 </div>
                 <div class="program-btn">
-                    <h4>Apply Now </h4>
+                    <a href="">
+                        <h4> Apply Now</h4>
+                    </a>
                 </div>
             </div>
-
+            <img src="Assets/robo-choose.png" alt="" class="right-robo">
             <div class="program-box-2 program-box">
                 <div class="program-box-content">
                     <h3>For Beginners (Inexperienced)</h3>
@@ -192,7 +196,9 @@
                 </div>
                 <div class="program-btn">
                     <div class="overlay">
-                        <h4>Apply Now </h4>
+                        <a href="">
+                            <h4> Apply Now</h4>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -206,7 +212,7 @@
 
     <!-- Trainers Section Starts From Here -->
 
-    <section class="trainers">
+    <section id="trainers" class="trainers">
         <div class="trainers-head">
             <h1>Meet our Trainers</h1>
         </div>
@@ -263,7 +269,7 @@
 
     <!-- Categories Section Starts From Here -->
 
-    <section class="category">
+    <section id="category" class="category">
         <div class="category-head">
             <h1>PROGRAM CATEGORIES</h1>
             <p>Choose Your Path:</p>
@@ -312,7 +318,7 @@
 
     <!-- ciriculum Section Starts From Here -->
 
-    <section class="ciriculum">
+    <section id="ciriculum" class="ciriculum">
         <div class="ciriculum-head">
             <h1>Curriculum Overview</h1>
             <p>Core Modules</p>
@@ -382,7 +388,7 @@
 
     <!-- unique Section Starts From Here -->
 
-    <section class="unique">
+    <section id="unique" class="unique">
         <div class="unique-head">
             <h1>Why Our Program is Unique</h1>
         </div>
@@ -458,7 +464,7 @@
 
     <!-- Demand Section Starts From Here -->
 
-    <section class="demand">
+    <section id="demand" class="demand">
         <div class="demand-left">
             <h1>Current Demand for AI Talent in Malaysia</h1>
             <p>Malaysia is rapidly advancing in the tech sector, with a significant focus on AI and machine learning.
@@ -482,7 +488,7 @@
 
     <!-- Enroll Section Starts From Here -->
 
-    <section class="enroll">
+    <section id="enroll" class="enroll">
         <div class="enroll-left">
             <img src="Assets/enroll-robot.png" alt="">
         </div>
@@ -497,7 +503,7 @@
 
     <!-- Contact Form Starts From Here -->
 
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact-left">
 
             <h1>CONTACT US</h1>
@@ -530,9 +536,9 @@
         </div>
 
 
-        <div class="contact-form">
+        <div  class="contact-form">
 
-            <form action="#" method="post">
+            <form  action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -559,8 +565,6 @@
     <div class="copyright">
         <p>Copyright © 2024 asiasoftlab.edu.my rights reserved</p>
     </div>
-
-    <script src="script.js"></script>
 
 </body>
 
