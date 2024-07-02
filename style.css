@@ -1520,7 +1520,7 @@ body {
     align-items: center;
     padding: 20px 5px;
     margin: 20px;
-    transform: translateX(-400px);
+    transform: translateX(-100px);
     /* Start from above */
     transition: opacity 0.5s ease-out, transform 1.3s ease-out;
     /* Smooth transition */
@@ -1544,7 +1544,7 @@ body {
     align-items: center;
     padding: 20px 5px;
     margin: 20px;
-    transform: translateX(400px);
+    transform: translateX(100px);
     /* Start from above */
     transition: opacity 0.5s ease-out, transform 1.3s ease-out;
     /* Smooth transition */
@@ -1814,7 +1814,7 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
-    transform: translateX(-400px);
+    transform: translateX(-100px);
     /* Start from above */
     transition: opacity 0.5s ease-out, transform 1.3s ease-out;
     /* Smooth transition */
@@ -1832,7 +1832,7 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
-    transform: translateX(400px);
+    transform: translateX(100px);
     /* Start from above */
     transition: opacity 0.5s ease-out, transform 1.3s ease-out;
     /* Smooth transition */
@@ -1852,7 +1852,7 @@ body {
     width: 350px;
     background-repeat: no-repeat;
     margin: 40px 20px;
-    transform: translateY(400px);
+    transform: translateY(100px);
     /* Start from above */
     transition: opacity 0.5s ease-out, transform 1.3s ease-out;
     /* Smooth transition */
@@ -2303,7 +2303,7 @@ body {
         width: 100%;
         display: flex;
         margin-top: 50px;
-        animation: 15s slide infinite linear;
+        animation: 40s slide infinite linear;
 
     }
 
@@ -2321,7 +2321,7 @@ body {
         width: 100%;
         margin: 0px auto;
         display: flex;
-        animation: 15s slide-right infinite linear;
+        animation: 40s slide-right infinite linear;
 
     }
 
