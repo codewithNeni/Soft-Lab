@@ -212,11 +212,12 @@ body {
 
     .navbar {
         display: flex;
-        gap: 50px;
+        gap: 0px;
         align-items: center;
         background-color: #00134D;
         color: white;
         padding: 35px 0px;
+        justify-content: space-evenly;
         width: 85vw;
         height: 60px;
         border-radius: 50px;
@@ -237,6 +238,8 @@ body {
 
     .logo img {
         height: 35px;
+        margin-left: 20px;
+        
     }
 
     nav {
@@ -1367,14 +1370,14 @@ body {
     background-image: url(Assets/trainer-btn.png);
     margin-top: 40px;
     background-size: contain;
-    width: 368px;
-    height: 57px;
+    width: 362px;
+    height: 61px;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'integral', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 100;
 }
 
