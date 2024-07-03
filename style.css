@@ -1597,7 +1597,7 @@ body {
 }
 
 .trainers-icons img {
-    width: 50px;
+    width: 60px;
 }
 
 @media (min-width: 1800px) and (max-width: 2000px) {
@@ -1736,7 +1736,7 @@ body {
     }
 
     .trainers-icons img {
-        width: 30px;
+        width: 50px;
     }
 
     .trainers-box p {
