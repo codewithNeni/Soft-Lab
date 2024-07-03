@@ -422,7 +422,7 @@ body {
         animation-direction: normal;
         font-size: 40px;
     }
-    
+
 
     .hero-left {
         width: 30%;
@@ -663,6 +663,7 @@ body {
     transform: translateY(0);
     /* Move to original position */
 }
+
 .choose-cont-3 {
     display: flex;
     justify-content: space-between;
@@ -1163,7 +1164,7 @@ body {
     z-index: 1000;
 }
 
-.right-robo{
+.right-robo {
     position: absolute;
     right: 226px;
     bottom: 200px;
@@ -1828,6 +1829,7 @@ body {
     transform: translateY(0);
     /* Move to original position */
 }
+
 .categ-box-3 {
     background-image: url(Assets/program-box.png);
     background-size: contain;
@@ -2197,6 +2199,7 @@ body {
     from {
         transform: translateX(0%);
     }
+
     from {
         transform: translateX(-510%);
     }
@@ -2357,7 +2360,7 @@ body {
 
 .unique {
     width: 100%;
-    margin-top:120px;
+    margin-top: 120px;
 }
 
 .unique-head h1 {
@@ -2535,6 +2538,7 @@ body {
     position: absolute;
     bottom: 200px;
 }
+
 /* 
 .unique-robo {
     position: absolute;
@@ -2543,7 +2547,7 @@ body {
     width: 35vw;
     /* animation: slide-up 2s ease-in-out forwards; */
 
-    
+
 .unique-robo {
     position: absolute;
     z-index: 22;
@@ -2856,12 +2860,6 @@ body {
     margin-top: 170px;
 }
 
-/* .enroll-left {
-    width: 30%;
-    height: 80%;
-
-} */
-
 .enroll-left {
     width: 30%;
     height: 80%;
@@ -2886,17 +2884,6 @@ body {
     top: -50px;
     width: 35vw;
 }
-
-/* .enroll-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-} */
 
 .enroll-right {
     display: flex;
@@ -2965,10 +2952,8 @@ body {
 
     .enroll-left {
         width: 90%;
-        margin-top: 120px;
+        margin-top: 50px;
         margin-left: 60px;
-
-
     }
 
     .enroll-left img {
