@@ -3044,11 +3044,11 @@ body {
 
 .email-content {
     padding: 15px;
-
 }
 
 .email-content p {
     margin-top: 3px;
+    width: 100%;
 }
 
 .contact-links {
@@ -3070,6 +3070,10 @@ body {
 
 .address {
     width: 100%;
+}
+
+.address p{
+    width: 60%;
 }
 
 
