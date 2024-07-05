@@ -2085,7 +2085,7 @@ body {
     height: 170px;
     width: 170px;
     left: 90px;
-    bottom: 0px;
+    bottom: 265px;
 }
 
 
@@ -2125,7 +2125,7 @@ body {
     font-family: 'integral', sans-serif;
     font-weight: 100;
     position: relative;
-    z-index: 3;
+    z-index: 1003;
     left: 0px;
     bottom: -35px;
 }
@@ -2243,8 +2243,8 @@ body {
     .prog-img-3{
         height: 180px;
         width: 180px;
-        left: 80px;
-        bottom: 330px;
+        left: 70px;
+        bottom: 270px;
     }    
 
     .category-head p {
@@ -2319,6 +2319,7 @@ body {
 
 }
 
+
 @media (hover: none) {
     .category-box:hover {
         background-image: url(Assets/categpry-box-mobile-bg-img.png);
@@ -2336,7 +2337,6 @@ body {
         color: white;
     }
 }
-
 
 
 /* Ciriculum Section Starts From Here */
