@@ -2695,8 +2695,8 @@ body {
     background-image: url(Assets/unique-box-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 220px;
-    width: 450px;
+    height: 200px;
+    width: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2712,7 +2712,7 @@ body {
 
 .unique-box-left img {
     position: absolute;
-    top: -10px;
+    top: -30px;
 }
 
 .unique-box-right {
@@ -2720,8 +2720,8 @@ body {
     background-image: url(Assets/unique-box-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 220px;
-    width: 450px;
+    height: 200px;
+    width: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2736,7 +2736,7 @@ body {
 
 .unique-box-right img {
     position: absolute;
-    bottom: 180px;
+    bottom: 170px;
 }
 
 .unique-mid-cont {
@@ -2778,7 +2778,7 @@ body {
 
 .right img {
     position: absolute;
-    bottom: 200px;
+    bottom: 180px;
 }
 
 /* 
