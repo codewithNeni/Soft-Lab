@@ -87,6 +87,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create an Intersection Observer
+    let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class when the element is in view
+                entry.target.classList.add('in-view');
+            } else {
+                // Optionally, you can remove the class when it's out of view
+                // entry.target.classList.remove('in-view');
+            }
+        });
+    });
+    
+    // Target the .choose-head element
+    let target = document.querySelector('.brosh-1');
+    if (target) {
+        observer.observe(target);
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create an Intersection Observer
+    let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class when the element is in view
+                entry.target.classList.add('in-view');
+            } else {
+                // Optionally, you can remove the class when it's out of view
+                // entry.target.classList.remove('in-view');
+            }
+        });
+    });
+    
+    // Target the .choose-head element
+    let target = document.querySelector('.brosh-2');
+    if (target) {
+        observer.observe(target);
+    }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Create an Intersection Observer
     let observer = new IntersectionObserver(function (entries) {
@@ -103,6 +149,29 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Target the .choose-head element
     let target = document.querySelector('.robo-hand ');
+    if (target) {
+        observer.observe(target);
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create an Intersection Observer
+    let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class when the element is in view
+                entry.target.classList.add('in-view');
+            } else {
+                // Optionally, you can remove the class when it's out of view
+                // entry.target.classList.remove('in-view');
+            }
+        });
+    });
+    
+    // Target the .choose-head element
+    let target = document.querySelector('.brosh-3 ');
     if (target) {
         observer.observe(target);
     }
