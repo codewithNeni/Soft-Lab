@@ -271,13 +271,16 @@ body {
     font-size: 34px;
     font-weight: 800;
     color: white;
-    margin-top: 90px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    /* opacity: 0;
-    animation: slide-left 1.1s ease-in-out forwards; */
+
+}
+
+.hero-left span{
+    color: #0469FF;
 }
 
 @keyframes slide-left {
@@ -501,10 +504,10 @@ body {
     }
 
     .hero-left h1 {
-        line-height: 25px;
+        line-height: 28px;
         text-align: center;
         font-size: 28px;
-        width: 100%;
+        width: 90%;
         letter-spacing: 2px;
         margin: 0px auto;
         font-weight: 500;
@@ -541,7 +544,7 @@ body {
     .hero-btn {
         display: flex;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .hero-btn img {
@@ -552,9 +555,9 @@ body {
         width: 90%;
         margin: 0px auto;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
-        height: 450px;
+        height: 480px;
         /* background-color: red; */
 
     }
@@ -565,12 +568,13 @@ body {
     }
 
     .hero-right {
-        margin-top: 26%;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         width: 99%;
+        justify-content: ;
         margin: 0px auto;
+        /* background-color: red; */
+        align-items: flex-end;
     }
 
     .hero-right img {
@@ -586,7 +590,7 @@ body {
         color: white;
         font-size: 13px;
         line-height: normal;
-        margin: 0px auto;
+        margin: 15px auto;
     }
 
 
@@ -985,7 +989,7 @@ body {
     display: none;
 }
 
-.robo-hand  {
+.robo-hand {
     width: 30%;
     height: 80%;
     /* Initially hidden */
@@ -1009,6 +1013,7 @@ body {
     width: 330px;
     height: 330px;
 }
+
 /* 
 .side-img {
     position: absolute;
@@ -1017,7 +1022,7 @@ body {
     z-index: 8;
 } */
 
-.side-img  {
+.side-img {
     position: absolute;
     top: 350px;
     left: 100px;
@@ -1217,6 +1222,7 @@ body {
     transform: translateY(0);
     /* Move to original position */
 }
+
 /* 
 .right-up {
     position: absolute;
@@ -1483,7 +1489,7 @@ body {
 
 /* Brosher Section starts From Here */
 
-.brosher{
+.brosher {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -1491,7 +1497,7 @@ body {
     margin-top: 200px;
 }
 
-.brosh{
+.brosh {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1501,7 +1507,7 @@ body {
     padding-top: 20px;
 }
 
-.brosher img{
+.brosher img {
     width: 350px;
 }
 
@@ -1519,7 +1525,7 @@ body {
     position: relative;
     z-index: 3;
     left: 0px;
-    bottom:60px;
+    bottom: 60px;
 }
 
 .brosher-btn a {
@@ -1579,59 +1585,59 @@ body {
 
 @media (max-width: 768px) {
 
-    
-.brosher{
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px auto;
-    flex-direction: column;
-    margin-top: 100px;
-}
 
-.brosh{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0px auto;
-    align-items: center;
-    align-items: center;
-    padding-top: 10px;
-}
+    .brosher {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px auto;
+        flex-direction: column;
+        margin-top: 100px;
+    }
 
-.brosher img{
-    width: 290px;
-}
+    .brosh {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0px auto;
+        align-items: center;
+        align-items: center;
+        padding-top: 10px;
+    }
 
-.brosher-btn {
-    background-image: url(Assets/brosh-download.png);
-    background-size: cover;
-    width: 290px;
-    height: 60px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'integral', sans-serif;
-    font-weight: 100;
-    position: relative;
-    z-index: 3;
-    left: 0px;
-    bottom: 25px;
-}
+    .brosher img {
+        width: 290px;
+    }
 
-.brosher-btn a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    .brosher-btn {
+        background-image: url(Assets/brosh-download.png);
+        background-size: cover;
+        width: 290px;
+        height: 60px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'integral', sans-serif;
+        font-weight: 100;
+        position: relative;
+        z-index: 3;
+        left: 0px;
+        bottom: 25px;
+    }
 
-.brosh-btn h4 {
-    font-size: 20px;
-    margin-bottom: 6px;
-}
-    
+    .brosher-btn a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .brosh-btn h4 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
 }
 
 /* Trainers Section Start From Here */
@@ -2067,21 +2073,21 @@ body {
 }
 
 
-.program-img{
+.program-img {
     position: absolute;
     width: 160px;
     bottom: 270px;
     left: 100px;
 }
 
-.prog-img-2{
+.prog-img-2 {
     height: 200px;
     width: 200px;
     left: 75px;
 }
 
 
-.prog-img-3{
+.prog-img-3 {
     height: 170px;
     width: 170px;
     left: 90px;
@@ -2225,27 +2231,27 @@ body {
 
     }
 
-    .program-img{
+    .program-img {
         position: absolute;
         width: 140px;
         bottom: 280px;
         left: 85px;
     }
-    
-    .prog-img-2{
+
+    .prog-img-2 {
         width: 170px;
         height: 170px;
         bottom: 280px;
         left: 70px;
     }
-    
-    
-    .prog-img-3{
+
+
+    .prog-img-3 {
         height: 180px;
         width: 180px;
         left: 70px;
         bottom: 270px;
-    }    
+    }
 
     .category-head p {
         max-width: 300px;
@@ -2267,7 +2273,7 @@ body {
         position: relative;
         margin-top: 45px;
         flex-wrap: wrap;
-}
+    }
 
     .category-box {
         background-image: url(Assets/categpry-box-mobile-bg-img.png);
@@ -3314,7 +3320,7 @@ body {
     width: 100%;
 }
 
-.address p{
+.address p {
     width: 100%;
 }
 
